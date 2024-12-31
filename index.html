@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnneFans</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>AnneFans</h1>
+  </header>
+  
+  <main>
+    <section class="profiles">
+      <div class="profile">
+        <img src="anne-profile.jpg" alt="Anne Bae" class="profile-pic">
+        <h2>Anne Bae</h2>
+        <p>Subscribe for $20B/month to access 60 exclusive photos.</p>
+        <button class="subscribe-btn" data-name="Anne Bae">Subscribe</button>
+      </div>
+
+      <div class="profile">
+        <img src="pay-profile.jpg" alt="Pay the Unicorn" class="profile-pic">
+        <h2>Pay the Unicorn</h2>
+        <p>Subscribe for $20B/month to access 80 exclusive photos.</p>
+        <button class="subscribe-btn" data-name="Pay the Unicorn">Subscribe</button>
+      </div>
+    </section>
+
+    <section class="locked-content">
+      <h2>Locked Content</h2>
+      <div class="photos">
+        <div class="photo-card">
+          <img src="locked-photo1.jpg" alt="Locked Photo 1">
+          <p>Exclusive Photo</p>
+        </div>
+        <div class="photo-card">
+          <img src="locked-photo2.jpg" alt="Locked Photo 2">
+          <p>Exclusive Photo</p>
+        </div>
+        <!-- Add more photos as needed -->
+      </div>
+    </section>
+  </main>
+
+  <div class="modal hidden">
+    <div class="modal-content">
+      <h2>Enter Credit Card Information</h2>
+      <form id="payment-form">
+        <input type="text" placeholder="Card Number" required>
+        <input type="text" placeholder="Expiration Date" required>
+        <input type="text" placeholder="CVV" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="overlay hidden"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
